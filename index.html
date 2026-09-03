@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Area and Perimeter Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="area_and_perimeter_calc">
+      <h1 id="title">Area and Perimeter Calculator</h1>
+      <br />
+      <select id="shape">
+        <option value="Quadrilateral">Quadrilateral</option>
+        <option value="Circle">Circle</option>
+        <option value="Triangle">Triangle</option>
+        <option value="Regular_polygon">Regular polygon</option>
+        <option value="Rhombus">Rhombus</option>
+        <option value="Paralelogram">Paralelogram</option>
+        <option value="Trapezoid">Trapezoid</option>
+      </select>
+      <br />
+      <br />
+      <div id="parameters">
+        <div id="first_parameter_feild">
+          <label for="first_parameter" id="first_parameter_label"
+            >Length:</label
+          >
+          <input
+            type="number"
+            id="first_parameter"
+            style="border-radius: 5px"
+          />
+        </div>
+
+        <div id="second_parameter_feild">
+          <label for="second_parameter" id="second_parameter_label"
+            >Width:</label
+          >
+          <input
+            type="number"
+            id="second_parameter"
+            style="border-radius: 5px"
+          />
+        </div>
+
+        <div id="extra_parameters">
+          <div id="third_parameter_feild">
+            <label for="third_parameter" id="third_parameter_label"
+              >Height:</label
+            >
+            <input
+              type="number"
+              id="third_parameter"
+              style="border-radius: 5px"
+            />
+          </div>
+
+          <div id="fourth_parameter_feild">
+            <label for="fourth_parameter" id="fourth_parameter_label"
+              >Base:</label
+            >
+            <input
+              type="number"
+              id="fourth_parameter"
+              style="border-radius: 5px"
+            />
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <button id="area_btn">Calculate Area</button> <br />
+      <button id="perimeter_btn">Calculate Perimeter</button>
+
+      <h1 id="result" style="text-align: center"></h1>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

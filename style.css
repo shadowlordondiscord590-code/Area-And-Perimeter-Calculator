@@ -1,0 +1,194 @@
+#area_btn{
+    width: 50%;
+    height: 110%;
+    justify-self: center;
+    border-radius: 10px;
+    border: 4px solid rgb(230, 0, 255);
+    box-shadow: 3px 3px 4px 5px rgba(170, 0, 255, 0.676);
+    background-color: hsl(0, 0%, 80%);
+    animation: flyInLeft 1s cubic-bezier(.41,0,0,.95)
+}
+
+#area_btn:hover{
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 3px 3px 4px 5px rgb(205, 106, 255);
+    font-size: 1em;
+    transform: translateY(-2px);
+}
+
+#area_btn:active{
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 3px 3px 4px 5px rgb(220, 150, 255);
+    font-size: 1.25em;
+    transform: translateY(-5px);
+}
+#perimeter_btn{
+    width: 50%;
+    height: 110%;
+    justify-self: center;
+    border-radius: 10px;
+    border: 4px solid rgb(230, 0, 255);
+    box-shadow: 3px 3px 4px 5px rgba(170, 0, 255, 0.676);
+    background-color: hsl(0, 0%, 80%);
+    animation: flyInBottom 1s cubic-bezier(.41,0,0,.95);
+}
+
+#perimeter_btn:hover{
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 3px 3px 4px 5px rgb(205, 106, 255);
+    font-size: 1em;
+    transform: translateY(-2px);
+}
+
+#perimeter_btn:active{
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 3px 3px 4px 5px rgb(220, 150, 255);
+    font-size: 1.25em;
+    transform: translateY(-5px);
+}
+
+#area_btn:active{
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 3px 3px 4px 5px rgb(220, 150, 255);
+    font-size: 1.25em;
+    transform: translateY(-5px);
+}
+
+#shape{
+    width: 50%;
+    height: 110%;
+    justify-self: center;
+    border-radius: 10px;
+    border: 4px solid rgb(230, 0, 255);
+    box-shadow: 3px 3px 4px 5px rgba(170, 0, 255, 0.676);
+    animation: flyInRight 1.5s cubic-bezier(.41,0,0,.95);
+    text-align: center;
+    font-size: 1.10em;
+}
+body{
+    background: url(assets/mathBG.jpeg);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0px;
+}
+
+#area_and_perimeter_calc{
+    display: grid;
+    text-align: center;
+    gap: 5px;
+    background-color: rgba(0, 255, 255, 0.498);
+    padding: min(2em, 100px);
+    border: 5px groove rgb(0, 255, 136);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    min-width: 50%;
+    min-height: 60dvh;
+}
+
+#parameters {
+    color:rgb(45, 61, 231);
+    font-size: 1.5em;
+    text-align: center;
+    margin: 4px;
+}
+
+#parameters div {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 4px;
+    margin-left: 0px;
+}
+
+#parameters label {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;
+    min-width: 70px; 
+    text-align: right;
+    margin-right: 10px;
+}
+
+#parameters input {
+    width: 120px;
+    padding: 3px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: .75em;
+    background-color: hsl(0, 0%, 80%);
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 3px 3px 3px 2.5px rgba(1, 64, 158, 0.735);
+}
+
+#parameters input:hover {
+    border-color: rgba(0, 255, 136, 0.479);
+    box-shadow: 3px 3px 3px 2.5px rgba(0, 255, 136, 0.454);
+}
+#parameters input:focus {
+    outline: none;
+    border-color: rgb(0, 255, 136);
+    box-shadow: 3px 3px 3px 2.5px rgba(0, 255, 136, 0.735);
+}
+
+#extra_parameters{
+    display: contents;
+}
+#title{
+    animation: flyInLeft 1s cubic-bezier(.41,0,0,.95);
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'comic sans ms', 'comic sans';
+}
+
+#first_parameter_feild{
+    animation: flyInLeft 1s cubic-bezier(.41,0,0,.95)
+}
+
+#second_parameter_feild{
+    animation: flyInLeft 1.5s cubic-bezier(.41,0,0,.95);
+}
+
+#third_parameter_feild{
+    animation: flyInLeft 2s cubic-bezier(.41,0,0,.95);
+}
+
+#fourth_parameter_feild{
+    animation: flyInLeft 2.5s cubic-bezier(.41,0,0,.95);
+}
+
+
+@keyframes flyInLeft{
+    from{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes flyInRight{
+    from{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes flyInBottom{
+    from{
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
